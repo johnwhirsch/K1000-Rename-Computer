@@ -16,7 +16,7 @@ Label to target computers with new names:
  - Create a smart label that targets computers as such:
  - "Desired Name" != "" (blank)
  
- Script Settings:
+Script Settings:
  - Type: Online KScript
  - Labels: the smart label you created above
  - Operating Systems: Win7+
@@ -24,8 +24,8 @@ Label to target computers with new names:
  - Dependencies: 
    - MySql Data Connector installer MSI
    - The powershell script created to rename the computer
- Task - Run Batch: powershell -executionpolicy bypass -file "set-name.ps1"
+ - Task - Run Batch: powershell -executionpolicy bypass -file "set-name.ps1"
  
-  What this should do:
-  - Put any computer you add a "Desired Name" for in it's asset item to a smart label group
-  - Run the set-name file and rename the computer and restart at midnight
+What this should do:
+ - Put any computer you add a "Desired Name" for in it's asset item to a smart label group
+ - Run the set-name file and rename the computer and restart at midnight
