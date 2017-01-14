@@ -4,7 +4,7 @@ function RN_CheckName {
 
     Write-Host "[Log Step] Checking for updated name"
 
-    $SecurePasswordKey = "report secure password" # K1000 password for MySQL report user
+    $SecurePasswordKey = "report secure password" # K1000 password for MySQL report user or other read-only user
     $key = (3,4,17,28,56,34,254,223,28,53,29,23,42,54,33,233,7,2,2,28,6,7,54,43)
     $SecurePassword = ConvertTo-SecureString -String $SecurePasswordKey -Key $key
     $un = "report" 
